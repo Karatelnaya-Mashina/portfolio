@@ -1,0 +1,26 @@
+.promo {
+	min-height: 100vh;
+	position: relative;
+	background: url(../img/background.jpeg) no-repeat 50% / cover;
+	padding-top: 205px;
+	&__title {
+		width: 530px;
+		margin-top: 10px;
+	}
+	&__subtitle {
+		position: relative;
+		padding-left: 10px;
+		z-index: 2;
+		@include before_circle;
+	}
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		margin-top: 25px;
+		width: 270px;
+	}
+	&__link {
+		width: 135px;
+		height: 45px;
+	}
+}
