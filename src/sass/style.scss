@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
-// @import 'base/fonts';
+// @import 'libs/fonts';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
 @import 'base/variables';
 @import 'base/mixins';
@@ -15,6 +15,8 @@
 	margin: 0 auto;
 }
 
-@import 'blocks/promo';
 @import 'blocks/title';
-@import 'base/buttons';
+@import 'libs/buttons';
+@import 'blocks/promo';
+@import 'blocks/sidepanel';
+@import 'blocks/hamburger';
