@@ -9,6 +9,9 @@
 		row-gap: 40px;
 		p {
 			margin-top: 22px;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 21px;
 		}
 	}
 	&__photo {
@@ -21,6 +24,7 @@
 		position: relative;
 		.divider {
 			margin-top: 3px;
+			margin: 0;
 		}
 	}
 	&_circle {
@@ -53,5 +57,10 @@
 				top: 2px;
 			}
 		}
+	}
+	&__text {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
 	}
 }

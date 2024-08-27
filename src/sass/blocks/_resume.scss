@@ -1,0 +1,91 @@
+.resume {
+	padding-top: 120px;
+	&__title {
+		text-align: center;
+		@include before_circle;
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__subtitle {
+		text-align: center;
+	}
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 450px);
+		margin-top: 62px;
+		padding: 60px 65px 0 65px;
+		column-gap: 134px;
+	}
+	&__column {
+		&-title {
+			position: relative;
+			padding-left: 35px;
+			&::before {
+				content: '';
+				position: absolute;
+				height: 15px;
+				width: 15px;
+				background: $main-color;
+				border-radius: 100%;
+				left: -7px;
+				top: 8px;
+			}
+		}
+		ul {
+			padding-left: 0;
+			list-style-type: none;
+			li {
+				position: relative;
+				&::after {
+					content: '';
+					height: 100%;
+					width: 1px;
+					position: absolute;
+					top: -16px;
+					left: 0;
+					background: #000;
+				}
+			}
+		}
+	}
+
+	&__item {
+		position: relative;
+		&::before {
+			content: '';
+			height: 1px;
+			width: 37px;
+			position: absolute;
+			background: #000;
+			top: 65px;
+		}
+		&-head {
+			display: flex;
+			padding: 45px 0 0 35px;
+		}
+		&-icon {
+			position: relative;
+			margin-top: 14px;
+			margin-left: 18px;
+			@include before_circle;
+			&:before {
+				left: -16px;
+				top: -12px;
+			}
+		}
+		&-title {
+			margin-left: 20px;
+		}
+		&-study {
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 14px;
+		}
+		&-text {
+			margin-top: 12px;
+			padding-left: 35px;
+		}
+	}
+}
