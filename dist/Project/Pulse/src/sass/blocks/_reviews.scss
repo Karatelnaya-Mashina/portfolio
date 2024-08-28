@@ -1,0 +1,32 @@
+.reviews {
+	padding-bottom: 48px;
+	&__wrapper {
+		margin-top: 60px;
+		display: flex;
+		img {
+			margin-right: 61px;
+			height: 169px;
+			width: 169px;
+		}
+	}
+	&__name {
+		color: rgb(13, 13, 13);
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 18px;
+		text-align: left;
+		span {
+			color: rgb(100, 100, 100);
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+	&__text {
+		margin-top: 10px;
+		color: rgb(13, 13, 13);
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		text-align: left;
+	}
+}

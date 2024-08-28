@@ -1,0 +1,144 @@
+@media (max-width: 575px) {
+	.header {
+		padding: 0 10px;
+		&__official {
+			display: none;
+		}
+		&__contacts {
+			margin-left: 10px;
+		}
+		&__phone {
+			font-size: 14px;
+		}
+	}
+	.promo {
+		min-height: 500px;
+		padding: 21px 0 30px 0;
+		&__wrapper {
+			padding: 0 5px;
+			margin-top: 50px;
+			align-items: center;
+		}
+		&__header {
+			font-size: 25px;
+		}
+		&__subheader {
+			font-size: 14px;
+			margin-top: 5px;
+		}
+		&__icons {
+			margin-top: 50px;
+			width: 100%;
+		}
+		&__link {
+			width: 175px;
+			font-size: 14px;
+		}
+	}
+	.advantages {
+		padding: 40px 0 40px 0;
+		&__wrapper {
+			margin-top: 5px;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item {
+			margin-top: 15px;
+		}
+		&__subtitle {
+			margin-top: 20px;
+		}
+		&__description {
+			margin-top: 20px;
+		}
+	}
+	.consultation {
+		min-height: 500px;
+		padding: 50px 0 50px 0;
+		&__description {
+			font-size: 15px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.feed-form {
+			align-items: center;
+		}
+	}
+	.carousel {
+		padding: 20px 0;
+		&__inner {
+			width: 100%;
+			div > img {
+				width: 100%;
+			}
+		}
+		.slick-dots {
+			display: flex;
+			justify-content: space-evenly;
+			button {
+				display: none;
+			}
+		}
+	}
+	.catalog {
+		&__tabs {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__tab {
+			margin-top: 5px;
+		}
+		&__content {
+			margin-top: 25px;
+			justify-content: center;
+		}
+	}
+	.reviews {
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 40px;
+			img {
+				margin-right: 0;
+			}
+		}
+		&__name {
+			margin-top: 20px;
+			text-align: center;
+		}
+		&__text {
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+	.footer {
+		&__info {
+			width: 100%;
+			padding: 30px 54px 36px 54px;
+			height: 210px;
+		}
+		&__address {
+			font-size: 16px;
+		}
+		&__phone {
+			font-size: 16px;
+			margin-top: 16px;
+		}
+		&__social {
+			margin: 14px;
+		}
+	}
+	.modal {
+		padding: 20px 15px 20px 15px;
+		width: 80%;
+		min-height: 143px;
+		&__close {
+			right: -3px;
+		}
+		&__subtitle {
+			margin-top: 20px;
+		}
+	}
+}

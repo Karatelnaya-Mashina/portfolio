@@ -1,0 +1,24 @@
+.feed-form {
+	margin-top: 26px;
+	display: flex;
+	flex-direction: column;
+	width: 303px;
+	@media (max-width: 575px) {
+		width: 100%;
+	}
+	input {
+		height: 54px;
+		border-radius: 5px;
+		background: #fff;
+		color: rgb(75, 75, 75);
+		font-size: 14px;
+		font-weight: 300;
+		text-align: left;
+		margin-top: 12px;
+		padding: 0 21px;
+		border: none;
+	}
+	&_modal {
+		margin-top: 14px;
+	}
+}

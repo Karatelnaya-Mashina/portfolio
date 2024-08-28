@@ -25,4 +25,16 @@
 		line-height: 60px;
 		color: #fff;
 	}
+	&__section {
+		text-align: center;
+		position: relative;
+		@include before-circle;
+		&:before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__subtitle {
+		text-align: center;
+	}
 }

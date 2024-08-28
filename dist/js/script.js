@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
 	menu.classList.remove('active')
 })
+
+const counters = document.querySelectorAll('.skills__percentages'),
+	strip = document.querySelectorAll('.skills__strip span')
+
+counters.forEach((item, i) => {
+	strip[i].style.width = item.innerHTML
+})
