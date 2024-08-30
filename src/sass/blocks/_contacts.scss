@@ -1,0 +1,111 @@
+.contacts {
+	padding: 120px 0 95px 0;
+	&__wrapper {
+		padding: 0 35px 0 50px;
+		display: grid;
+		grid-template-columns: 400px 585px;
+		justify-content: space-between;
+		column-gap: 65px;
+	}
+	&__photo {
+		grid-row: 1/3;
+
+		img {
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+	&__description {
+		position: relative;
+		display: grid;
+
+		.divider {
+			margin: 0;
+		}
+	}
+	&__title {
+		margin-top: 20px;
+	}
+	&__social {
+		margin-top: 20px;
+		display: flex;
+
+		min-width: 135px;
+		a {
+			margin-right: 25px;
+		}
+	}
+	&__form {
+		padding-top: 30px;
+		display: grid;
+		grid-template: 45px 190px 45px / repeat(2, 280px);
+		gap: 30px 25px;
+	}
+	&__input {
+		position: relative;
+		width: 280px;
+		height: 45px;
+		border: 1px solid #000;
+		border-radius: 5px;
+		outline: none;
+		&:hover {
+			border-color: #ff7d03;
+		}
+		&:focus {
+			border-color: $main-color;
+		}
+	}
+	&__textaria {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		grid-column: 1 / 3;
+		border: 1px solid #000;
+		border-radius: 5px;
+		outline: none;
+		&:hover {
+			border-color: #ff7d03;
+		}
+
+		&:focus {
+			border-color: $main-color;
+		}
+	}
+	&__label {
+		position: absolute;
+		left: 1rem;
+		top: 0.8rem;
+		padding: 0 0.5rem;
+		cursor: text;
+		transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+		background-color: #fff;
+	}
+	.contacts__input:focus ~ .contacts__label,
+	.contacts__input:not(:placeholder-shown).contacts__input:not(:focus)
+		~ .form__label {
+		top: -0.5rem;
+		font-size: 0.8rem;
+		left: 0.8rem;
+	}
+	.contacts__textaria:focus ~ .contacts__label,
+	.contacts__textaria:not(:placeholder-shown).contacts__textaria:not(:focus)
+		~ .form__label {
+		top: -0.9rem;
+		font-size: 0.8rem;
+		left: 0.8rem;
+	}
+	&__button {
+		width: 220px;
+		height: 45px;
+		&::before,
+		&::after {
+			box-shadow: none;
+		}
+		span {
+			&::before,
+			&::after {
+				box-shadow: none;
+			}
+		}
+	}
+}
