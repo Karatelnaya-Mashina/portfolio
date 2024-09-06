@@ -35,6 +35,11 @@
 		min-width: 135px;
 		a {
 			margin-right: 25px;
+			&:hover {
+				svg path {
+					fill: $main-color;
+				}
+			}
 		}
 	}
 	&__form {

@@ -15,16 +15,28 @@
 	margin: 0 auto;
 }
 
-@import 'blocks/title';
 @import 'libs/buttons';
 @import 'libs/divider';
-@import 'blocks/promo';
-@import 'blocks/sidepanel';
-@import 'blocks/menu';
-@import 'blocks/about';
-@import 'blocks/resume';
-@import 'blocks/skills';
-@import 'blocks/portfolio';
-@import 'blocks/price';
-@import 'blocks/contacts';
-@import 'blocks/footer';
+@import 'blocks/title/title';
+@import 'blocks/promo/promo';
+@import 'blocks/sidepanel/sidepanel';
+@import 'blocks/menu/menu';
+@import 'blocks/about/about';
+@import 'blocks/resume/resume';
+@import 'blocks/skills/skills';
+@import 'blocks/portfolio/portfolio';
+@import 'blocks/price/price';
+@import 'blocks/contacts/contacts';
+@import 'blocks/footer/footer';
+
+@import 'blocks/title/title-media';
+@import 'blocks/sidepanel/sidepanel-media';
+@import 'blocks/menu/menu-media';
+@import 'blocks/promo/promo-media';
+@import 'blocks/about/about-media';
+@import 'blocks/resume/resume-media';
+@import 'blocks/skills/skills-media';
+@import 'blocks/portfolio/portfolio-media';
+@import 'blocks/price/price-media';
+@import 'blocks/contacts/contacts-media';
+@import 'blocks/footer/footer-media';
