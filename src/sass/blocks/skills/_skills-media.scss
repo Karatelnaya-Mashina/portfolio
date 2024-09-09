@@ -14,11 +14,21 @@
 	}
 }
 @media (max-width: 992px) {
+	.skills {
+		&__branch {
+			grid-template-columns: repeat(2, 270px);
+			justify-content: center;
+			column-gap: 20px;
+		}
+		&__strip {
+			width: 270px;
+		}
+	}
 }
 @media (max-width: 768px) {
 	.skills {
 		&__wrapper {
-			grid-template-columns: repeat(2, 270px);
+			grid-template-columns: repeat(1, 270px);
 			justify-content: center;
 		}
 	}
