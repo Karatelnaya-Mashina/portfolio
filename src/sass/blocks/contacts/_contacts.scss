@@ -117,6 +117,7 @@
 	&__button {
 		width: 220px;
 		height: 45px;
+		border-radius: 5px;
 		&::before,
 		&::after {
 			box-shadow: none;

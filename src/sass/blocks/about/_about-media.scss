@@ -1,5 +1,5 @@
-// @media (max-width: 2048px) {
-// }
+@media (max-width: 1439px) {
+}
 @media (max-width: 1200px) {
 	.about {
 		&__wrapper {
@@ -34,17 +34,20 @@
 @media (max-width: 768px) {
 	.about {
 		&__wrapper {
-			grid-template-columns: 270px 290px;
-			column-gap: 50px;
+			grid-template-columns: 255px 265px;
+			column-gap: 20px;
 			row-gap: 30px;
 		}
 		&__skill {
-			grid-template-columns: 40px 230px;
+			grid-template-columns: 40px 210px;
 			grid-auto-rows: auto;
 			column-gap: 10px;
 		}
+		&__skills {
+			column-gap: 15px;
+		}
 		&__title {
-			font-size: 26px;
+			font-size: 24px;
 		}
 	}
 }
@@ -52,7 +55,7 @@
 	.about {
 		padding-top: 70px;
 		&__wrapper {
-			grid-template-columns: 280px;
+			grid-template-columns: 280px 0;
 			column-gap: 0px;
 			justify-content: center;
 			row-gap: 10px;

@@ -36,7 +36,11 @@
 	&__block {
 		position: relative;
 		width: 345px;
-		background: $main-color;
+		background: linear-gradient(0deg, $main-color 0%, #fb8e28 100%);
+
+		opacity: 0.9;
+
+		border-radius: 0 190px 0px 0;
 		height: 100%;
 		padding-top: 140px;
 		padding-left: 40px;

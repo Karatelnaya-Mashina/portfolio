@@ -5,6 +5,14 @@
 		&__wrapper {
 			padding: 0;
 			grid-template-columns: 370px 550px;
+			column-gap: 50px;
+		}
+		&__form {
+			gap: 30px 20px;
+			grid-template: 45px 190px 45px / repeat(2, 260px);
+		}
+		&__input {
+			width: 260px;
 		}
 	}
 }

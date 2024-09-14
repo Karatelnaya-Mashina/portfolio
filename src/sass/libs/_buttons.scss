@@ -14,7 +14,7 @@
 	line-height: 21px;
 }
 .btn {
-	background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, $main-color 100%);
+	background: linear-gradient(0deg, $main-color 0%, $main-color 100%);
 	line-height: 42px;
 	padding: 0;
 	border: none;

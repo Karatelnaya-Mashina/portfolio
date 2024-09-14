@@ -4,11 +4,11 @@
 	.skills {
 		margin-top: 55px;
 		&__wrapper {
-			grid-template-columns: repeat(2, 270px);
+			grid-template-columns: repeat(auto-fit, 270px);
 			justify-content: center;
 		}
 		&__branch {
-			grid-template-columns: repeat(2, 350px);
+			grid-template-columns: repeat(auto-fit, 350px);
 			justify-content: center;
 		}
 	}
@@ -16,7 +16,6 @@
 @media (max-width: 992px) {
 	.skills {
 		&__branch {
-			grid-template-columns: repeat(2, 270px);
 			justify-content: center;
 			column-gap: 20px;
 		}
@@ -28,20 +27,18 @@
 @media (max-width: 768px) {
 	.skills {
 		&__wrapper {
-			grid-template-columns: repeat(1, 270px);
 			justify-content: center;
+			margin-top: 30px;
 		}
 	}
 }
 @media (max-width: 576px) {
 	.skills {
 		&__wrapper {
-			grid-template-columns: repeat(1, 270px);
 			justify-content: center;
 		}
 		&__branch {
 			margin-top: 80px;
-			grid-template-columns: repeat(1, 270px);
 			justify-content: center;
 		}
 		&__strip {

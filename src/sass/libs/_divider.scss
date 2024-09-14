@@ -4,3 +4,8 @@
 	background: $main-color;
 	margin: 25px auto 0 auto;
 }
+@media (max-width: 768px) {
+	.divider {
+		margin: 0 auto;
+	}
+}

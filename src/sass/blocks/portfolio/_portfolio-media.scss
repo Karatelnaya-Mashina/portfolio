@@ -12,13 +12,29 @@
 @media (max-width: 992px) {
 	.portfolio {
 		margin-top: 80px;
+		&__wrapper {
+			grid-template: repeat(auto-fit, 220px) / repeat(auto-fit, 220px);
+		}
+		.mac {
+			grid-column: 2 / 4;
+			grid-row: 3 / 4;
+		}
+		.plans {
+			grid-column: 1 / 2;
+			grid-row: 2 / 4;
+		}
+		.bread {
+			grid-row: 1 / 3;
+			grid-column: 3 / 4;
+		}
 	}
 }
 @media (max-width: 768px) {
 	.portfolio {
 		&__wrapper {
-			grid-template: repeat(2, 175px) / repeat(3, 175px);
+			grid-template: repeat(auto-fit, 175px) / repeat(auto-fit, 175px);
 			grid-auto-rows: minmax(175px, auto);
+			margin-top: 30px;
 		}
 		.bread {
 			grid-row: 1 / 3;

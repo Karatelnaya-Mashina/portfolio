@@ -1,27 +1,9 @@
-// @media (max-width: 2048px) {
-// 	.sidepanel {
-// 		top: 650px;
-// 		left: -260px;
-// 		width: 700px;
-// 		align-items: center;
-// 		&__text {
-// 			font-size: 40px;
-// 		}
-// 		&__divider {
-// 			width: 110px;
-// 			height: 5px;
-// 			margin-top: 0;
-// 		}
-// 		&__link {
-// 			width: 35px;
-// 			height: 35px;
-// 		}
-// 	}
-// }
-@media (max-width: 1200px) {
+@media (max-width: 1439px) {
 	.sidepanel {
 		display: none;
 	}
+}
+@media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
 }

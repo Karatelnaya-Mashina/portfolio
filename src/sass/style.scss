@@ -9,7 +9,17 @@
 	margin: 0;
 	padding: 0;
 }
-
+body::-webkit-scrollbar {
+	width: 0px; /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.85); /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+	background-color: $main-color; /* цвет плашки */
+	border-radius: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1); /*вокруг плашки */
+}
 .container {
 	width: 1140px;
 	margin: 0 auto;
