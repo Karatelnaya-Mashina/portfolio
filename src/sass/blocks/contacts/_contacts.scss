@@ -50,8 +50,7 @@
 	}
 	&__input {
 		position: relative;
-		width: 280px;
-		height: 45px;
+
 		border: 1px solid #000;
 		border-radius: 5px;
 		outline: none;
@@ -61,8 +60,13 @@
 		&:focus {
 			border-color: $main-color;
 		}
+		input {
+			width: 100%;
+			height: 100%;
+		}
 	}
 	&__textaria {
+		margin-top: 15px;
 		position: relative;
 		width: 100%;
 		height: 100%;
@@ -73,6 +77,9 @@
 		&:hover {
 			border-color: #ff7d03;
 		}
+		#text {
+			margin-top: 0;
+		}
 
 		&:focus {
 			border-color: $main-color;
@@ -80,27 +87,27 @@
 	}
 	&__label {
 		position: absolute;
-		left: 1rem;
-		top: 0.8rem;
-		padding: 0 0.5rem;
+		left: 10px;
+		top: -20px;
+		padding: 0 5px;
 		cursor: text;
-		transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+		// transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
 		background-color: #fff;
 	}
-	.contacts__input:focus ~ .contacts__label,
-	.contacts__input:not(:placeholder-shown).contacts__input:not(:focus)
-		~ .form__label {
-		top: -0.5rem;
-		font-size: 0.8rem;
-		left: 0.8rem;
-	}
-	.contacts__textaria:focus ~ .contacts__label,
-	.contacts__textaria:not(:placeholder-shown).contacts__textaria:not(:focus)
-		~ .form__label {
-		top: -0.9rem;
-		font-size: 0.8rem;
-		left: 0.8rem;
-	}
+	// .contacts__input:focus ~ .contacts__label,
+	// .contacts__input:not(:placeholder-shown).contacts__input:not(:focus)
+	// 	~ .form__label {
+	// 	top: -0.5rem;
+	// 	font-size: 0.8rem;
+	// 	left: 0.8rem;
+	// }
+	// .contacts__textaria:focus ~ .contacts__label,
+	// .contacts__textaria:not(:placeholder-shown).contacts__textaria:not(:focus)
+	// 	~ .form__label {
+	// 	top: -0.9rem;
+	// 	font-size: 0.8rem;
+	// 	left: 0.8rem;
+	// }
 	&__triggers {
 		grid-column: 1 / 3;
 		display: grid;

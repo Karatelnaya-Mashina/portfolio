@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	position: absolute;
 	top: 20px;
-	right: 30px;
+	left: 30px;
 	height: 21px;
 	align-items: flex-end;
 	cursor: pointer;
@@ -13,6 +13,7 @@
 		width: 30px;
 		height: 1px;
 		background: #fff;
+		align-self: self-start;
 	}
 	span.long {
 		width: 36px;
@@ -78,14 +79,13 @@
 		}
 		&:hover {
 			&::before {
-				background-color: #fff;
+				background-color: #000;
 			}
 		}
 		a {
-			color: #fff;
+			color: #000;
 			width: 15px;
 			height: 15px;
-			border-radius: 100%;
 			text-decoration: none;
 		}
 	}

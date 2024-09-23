@@ -235,7 +235,7 @@
 			</div>
 			<div class="menu__overlay"></div>
 		</div>
-		<section class="promo">
+		<section id="up" class="promo">
 			<div class="hamburger">
 				<span></span>
 				<span class="long"></span>
@@ -671,7 +671,7 @@
 							<img src="img/profile_2.jpg" alt="photo" />
 						</picture>
 					</div>
-					<div class="contacts__description">
+					<div class="contacts__description" id="contacts">
 						<h2 class="title about_circle">Контакты</h2>
 						<div class="title title_fz36 contacts__subtitle">
 							Свяжитесь со мной
@@ -724,31 +724,17 @@
 						<div class="title title_f14 contacts__title">
 							Или оставьте ваши данные и я сам вам напишу:
 						</div>
-						<form action="#" class="contacts__form">
+						<form action="#" class="contacts__form" id="contacts-form">
 							<div class="contacts__input">
-								<input
-									required
-									type="text"
-									id="name"
-									class="contacts__input"
-									autocomplete="off"
-									placeholder=" "
-								/>
+								<input name="name" type="text" class="contacts__input" />
 								<label for="name" class="contacts__label"> Ваше Имя </label>
 							</div>
 							<div class="contacts__input">
-								<input
-									required
-									type="text"
-									id="email"
-									class="contacts__input"
-									autocomplete="off"
-									placeholder=" "
-								/>
+								<input name="email" type="email" class="contacts__input" />
 								<label for="email" class="contacts__label"> Ваш Email </label>
 							</div>
 							<div class="contacts__textaria">
-								<textarea name="text" id="text" class="contacts__textaria">
+								<textarea name="text" class="contacts__textaria" id="text">
 								</textarea>
 								<label for="text" class="contacts__label">
 									Ваше сообщение
@@ -759,7 +745,7 @@
 									<span>Отправить сообщение</span>
 								</button>
 								<div class="contacts__policy">
-									<input required type="checkbox" />
+									<input type="checkbox" />
 									<span>
 										Я согласен(а) с
 										<a target="_blank" href="policy.html">
@@ -792,6 +778,12 @@
 				</div>
 			</div>
 		</footer>
+		<a href="#up" class="pageup">
+			<img src="img/circle-chevron-up-solid.svg" alt="up" />
+		</a>
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
